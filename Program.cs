@@ -16,19 +16,24 @@ namespace CommonMathUT
             try
             {
                 // source points
-                PointXYZ car = new PointXYZ (-7, 5, 3);
-                PointSph sph = new PointSph (5, -30, 120);
-                PointCyl cyl = new PointCyl (3, -25, 9);
+                PointXYZ car1 = new PointXYZ (-7, 5, 3);
+                PointSph sph1 = new PointSph (5, -30, 120);
+                PointCyl cyl1 = new PointCyl (3, -25, 9);
 
-                ICartesian src = sph;
+                PointSph sph2 = new PointSph (7, -30, 120);
 
-                Console.WriteLine ("Source: " + src);
+                Vector3D v1 = sph2 - sph1;
+                Console.WriteLine (v1);
 
-                PointCyl s2 = new PointCyl (src);
-                Console.WriteLine ("Dest: " + s2);
+                //ICartesian src = sph;
+
+                //Console.WriteLine ("Source: " + src);
+
+                //PointCyl s2 = new PointCyl (src);
+                //Console.WriteLine ("Dest: " + s2);
                 
-                s2.Y += 2;
-                Console.WriteLine ("Dest: " + s2);
+                //s2.Y += 2;
+                //Console.WriteLine ("Dest: " + s2);
 
 
             }
