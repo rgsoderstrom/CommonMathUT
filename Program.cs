@@ -16,7 +16,7 @@ namespace CommonMathUT
             try
             {
                 // source points
-                PointXYZ car1 = new PointXYZ (-7, 5, 3);
+                PointXYZ car1 = new PointXYZ (-7, 5, 3); // comment
                 PointSph sph1 = new PointSph (5, -30, 120);
                 PointCyl cyl1 = new PointCyl (3, -25, 9);
 
