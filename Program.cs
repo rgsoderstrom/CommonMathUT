@@ -13,9 +13,9 @@ namespace CommonMathUT
     class Program
     {
         static bool RunTest1 = true;
-        static bool RunTest2 = false;
+        static bool RunTest2 = true;
 
-        static bool ExitAfterOneTest = true;
+        static bool ExitAfterOneTest = false;
 
         static void Main (string [] _)
         {
@@ -23,6 +23,8 @@ namespace CommonMathUT
             {
                 if (RunTest1)
                 { 
+                    Console.WriteLine ("Test1");
+
                     Complex c1 = new Complex (1, 2);
                     Complex c2 = new Complex (3, 4);
                     Complex c3 = c1 + c2;
@@ -49,6 +51,8 @@ namespace CommonMathUT
 
                 if (RunTest2)
                 { 
+                    Console.WriteLine ("Test2");
+
                     CMatrix cm1 = new CMatrix (2, 2);
                     CMatrix cm2 = new CMatrix (4, 4);
                 
